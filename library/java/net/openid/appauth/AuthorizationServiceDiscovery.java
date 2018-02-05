@@ -171,7 +171,7 @@ public class AuthorizationServiceDiscovery {
     private static final List<String> MANDATORY_METADATA = Arrays.asList(
             ISSUER.key,
             AUTHORIZATION_ENDPOINT.key,
-            JWKS_URI.key,
+//            JWKS_URI.key,
             RESPONSE_TYPES_SUPPORTED.key,
             SUBJECT_TYPES_SUPPORTED.key,
             ID_TOKEN_SIGNING_ALG_VALUES_SUPPORTED.key);

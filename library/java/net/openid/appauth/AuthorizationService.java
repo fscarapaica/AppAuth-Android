@@ -378,7 +378,8 @@ public class AuthorizationService {
                 intent.getPackage(),
                 mBrowser.useCustomTab.toString());
         intent.putExtra(CustomTabsIntent.EXTRA_TITLE_VISIBILITY_STATE, CustomTabsIntent.NO_TITLE);
-
+        intent.putExtra(Intent.EXTRA_REFERRER, Uri.parse("android-app://" + request.redirectUri.getScheme()));
+        
         Logger.debug("Initiating authorization request to %s",
                 request.configuration.authorizationEndpoint);
 
